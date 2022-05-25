@@ -9,7 +9,7 @@ struct Clock
 void TimeSetting(Clock &clock);
 
 // Ф - я вывод в консоль
-void ConsoleOutput();
+void ConsoleOutput(Clock& clock);
 
 // Двоичное в десятичное
 unsigned int BinaryToDecimal(int n);
