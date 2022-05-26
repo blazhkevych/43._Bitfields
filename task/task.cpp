@@ -22,14 +22,31 @@
 #include <conio.h>
 #include <Windows.h>
 
+using std::cout;
+using std::endl;
+
+
+
 int main()
 {
+	SetConsoleOutputCP(1251);
+	/*
+	Задает выходную кодовую страницу, используемую консолью, связанной с вызывающим процессом.
+	Консоль использует свою кодовую страницу вывода для преобразования символьных значений,
+	записанных различными функциями вывода, в изображения, отображаемые в окне консоли.
+	*/
+
 	Clock c;
+	c.hours = 0;
+	c.minutes = 0;
+	c.seconds = 3;
+
 	while (true)
 	{
 		while (!_kbhit())
 		{
 			system("cls");
+			Increment(c);
 			ConsoleOutput(c);
 			Sleep(1000);
 		}
