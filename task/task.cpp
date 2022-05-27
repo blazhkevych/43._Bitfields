@@ -9,14 +9,6 @@
 интервалом в одну секунду.
 */
 
-/*
-НЕ РАБОТАЕТ
-
-0.46.10 задание
-ф-я установка времени
-ф-я вывод в консоль
-*/
-
 #include <iostream>
 #include "lib.h"
 #include <conio.h>
@@ -24,8 +16,6 @@
 
 using std::cout;
 using std::endl;
-
-
 
 int main()
 {
@@ -39,7 +29,7 @@ int main()
 	Clock c;
 	c.hours = 0;
 	c.minutes = 0;
-	c.seconds = 3;
+	c.seconds = 0;
 
 	while (true)
 	{
